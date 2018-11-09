@@ -1,0 +1,1205 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Resets */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+/* General Styles */
+.wrapper {
+  background-color:black;
+  width: 100%;
+	margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0;
+}
+
+header {
+  width: 100%;
+  padding: 0 0 0 200px;
+  background:
+  linear-gradient(to right, #72ada4, #bbf0e7)
+
+}
+
+header h1 {
+  font-family: cursive;
+  font-size: 36px;
+  color: #000;
+  margin: 0;
+  padding: 15px 0 0 25px;
+
+}
+
+header h2 {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+header h3 {
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0 0 15px 75px;
+}
+
+/*main styles*/
+div main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 10% auto 0;
+  padding: 30px 30px 80px;
+}
+
+main div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* section 1 .dummy-div styles*/
+main div section div:first-of-type {
+  min-width: 32%;
+  min-height: auto;
+}
+
+/* section 1 .image-02 styles*/
+main div section:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* section 2 styles */
+main div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+/* all nav styles */
+main div section nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 3px;
+  list-style: none;
+  text-align: center;
+}
+
+/* HTML nav */
+.div-02 section:first-child ul {
+  width: 700px;
+  background-color: #bbf0e7;
+}
+
+/* Javascript nav */
+.div-02 section:nth-child(2) ul {
+  width: 600px;
+  background-color: #bbf0e7;
+}
+
+/* PHP nav */
+.div-02 section:nth-child(3) ul {
+  width: 500px;
+  background-color: #bbf0e7;
+}
+
+/* Wordpress nav */
+.div-02 section:nth-child(4) ul {
+  width: 400px;
+  background-color: #bbf0e7;
+}
+
+/* External CLient Project nav */
+.div-02 section:nth-child(5) ul {
+  width: 300px;
+  height: 70px;
+  padding: 18px 0 0 0;
+  background-color: #bbf0e7;
+}
+
+/* Portfolio nav */
+.div-02 section:nth-child(7) ul {
+  width: 200px;
+  height: 70px;
+  padding: 18px 0 0 0;
+  background-color: #bbf0e7;
+}
+
+  .div-02 section ul li:nth-child(2),
+   .div-02 section ul li:nth-child(3),
+   .div-02 section ul li:nth-child(4) {
+    padding-top: 20px;
+  }
+
+
+/* Javascript nav link class */
+.js-first {
+  margin-left: 70px;
+}
+
+.div-02 section:nth-child(2) ul li a {
+  margin-left: 10px;
+ }
+
+/* PHP nav link */
+.div-02 section:nth-child(3) ul li a {
+  margin-left: 150px;
+}
+
+/* External Client Project, Portfolio nav links */
+.div-02 section:nth-child(5) ul li a,
+.div-02 section:nth-child(7) ul li a {
+  font-size: 20px;
+}
+
+/* blank section div */
+.blank-section {
+  width: 100px;
+  height: 50px;
+  border-left: 1px solid white;
+}
+
+.div-02 section p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding-top: 20px;
+}
+
+.div-02 section nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+  }
+
+.div-02 section nav ul li a:hover,
+/* .div-02 section nav ul li a:focus, */
+.div-02 section nav ul li a:active {
+  color: white;
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 25%;
+  background-color: black;
+}
+
+/* footer styles */
+footer {
+  height: 20px;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*--------------------------------------*/
+/* media queries styles */
+/*--------------------------------------*/
+@media only screen and (min-width: 1366px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .div-02 section ul li:nth-child(2),
+   .div-02 section ul li:nth-child(3),
+   .div-02 section ul li:nth-child(4) {
+    padding-top: 20px;
+  }
+}
+
+/*-------------------------*/
+@media only screen and (max-width: 1050px){
+
+  header {
+    height: 150px;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  header h2 {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  header h3 {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  div main {
+    padding: 0;
+  }
+
+  .div-02 {
+    margin: 0 auto;
+  }
+
+  main div:first-of-type {
+    display: none;
+  }
+
+  main div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+  }
+
+  .js-first {
+    margin-left: 0;
+  }
+
+  footer {
+    height: 40px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/*--------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait){
+    header {
+      height: 200px;
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    header h2 {
+      font-size: 28px;
+    }
+
+    header h3 {
+      font-size: 26px;
+    }
+
+    main div:nth-of-type(2) {
+      justify-content: center;
+    }
+
+    /* HTML nav */
+    .div-02 section:first-child ul {
+      width: 700px;
+      height: 100px;
+    }
+
+    /* Javascript nav */
+    .div-02 section:nth-child(2) ul {
+      width: 650px;
+      height: 100px;
+    }
+
+    /* PHP nav */
+    .div-02 section:nth-child(3) ul {
+      width: 600px;
+      height: 100px;
+    }
+
+    /* Wordpress nav */
+    .div-02 section:nth-child(4) ul {
+      width: 550px;
+      height: 100px;
+    }
+
+    /* External CLient Project nav */
+    .div-02 section:nth-child(5) ul {
+      width: 500px;
+    }
+
+    /* Portfolio nav */
+    .div-02 section:nth-child(7) ul {
+      width: 450px;
+    }
+
+   .div-02 section ul li:nth-child(2),
+   .div-02 section ul li:nth-child(3),
+   .div-02 section ul li:nth-child(4) {
+    padding-top: 20px;
+  }
+
+  .js-first {
+    margin-left: 0;
+  }
+
+}
+
+/* iPhone X landscape 812 x 375 */
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+  header {
+    height: 75px;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 14px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .div-02 section ul {
+    height: 35px;
+  }
+
+  .div-02 section:nth-child(5) ul,
+  .div-02 section:nth-child(7) ul {
+    height: 35px;
+    padding: 0;
+  }
+
+  .div-02 section p {
+    font-size: 16px;
+    padding: 5px 0 0 0;
+  }
+
+  .div-02 section nav ul li a {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .div-02 section:nth-child(5) ul li a,
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 16px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+}
+
+/* iphonex 812 x 375 landscape */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  main div:nth-of-type(2) {
+    width: 700px;
+    justify-content: center;
+    padding: 0;
+ }
+
+  /* HTML nav */
+  .div-02 section:first-child ul {
+    width: 450px;
+    height: 25px;
+   }
+
+  /* Javascript nav */
+  .div-02 section:nth-child(2) ul {
+    width: 400px;
+    height: 25px;
+  }
+
+  /* PHP nav */
+  .div-02 section:nth-child(3) ul {
+    width: 350px;
+    height: 25px;
+  }
+
+  /* Wordpress nav */
+  .div-02 section:nth-child(4) ul {
+    width: 300px;
+    height: 25px;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    width: 250px;
+    height: 25px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    width: 200px;
+    height: 25px;
+  }
+}
+
+/*-------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+  header {
+    height: 75px;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+
+  div main {
+    padding: 0;
+  }
+
+  main div:first-of-type {
+    display: none;
+  }
+
+  main div:nth-of-type(2) {
+    width: 500px;
+    justify-content: center;
+ }
+
+  /* HTML nav */
+  .div-02 section:first-child ul {
+    width: 450px;
+    height: 65px;
+   }
+
+  /* Javascript nav */
+  .div-02 section:nth-child(2) ul {
+    width: 400px;
+    height: 65px;
+  }
+
+  /* PHP nav */
+  .div-02 section:nth-child(3) ul {
+    width: 350px;
+    height: 65px;
+  }
+
+  /* Wordpress nav */
+  .div-02 section:nth-child(4) ul {
+    width: 300px;
+    height: 65px;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    width: 250px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    width: 200px;
+  }
+
+
+  /* External Client Project, Portfolio nav links */
+  .div-02 section:nth-child(5) ul li a,
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 16px;
+  }
+
+  .div-02 section p {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
+
+  .div-02 section nav ul li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Javascript nav link class margin reset*/
+  .div-02 section:nth-child(2) ul li a {
+    margin-left: 0;
+  }
+
+  /* PHP nav link margin reset*/
+  .div-02 section:nth-child(3) ul li a {
+    margin-left: 0;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+
+  footer {
+    height: 40px;
+    padding: 5px 0 0 0;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .js-first {
+    margin-left: 0;
+  }
+}
+
+/* Nexus 6P landscape */
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+  header {
+    height: 80px;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 14px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+    .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+/*---*/
+@media only screen and (max-width: 736px) and  (orientation: landscape) {
+  .div-02 section:nth-child(1) ul {
+    height: 23px;
+  }
+
+  .div-02 section:nth-child(2) ul {
+    height: 23px;
+  }
+
+  .div-02 section:nth-child(3) ul {
+    height: 23px;
+  }
+
+  .div-02 section:nth-child(4) ul {
+    height: 23px;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    height: 23px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    height: 23px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+
+/* Blackberry, iPhone6, iPhone7, iPhone8*, Galaxy s5 landscape */
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  header {
+    height: 80px;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  main div:nth-of-type(2) {
+    justify-content: center;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    height: 30px;
+    padding: 0;
+  }
+
+  .div-02 section:nth-child(5) ul li a {
+    font-size: 14px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    height: 30px;
+    padding: 0;
+  }
+
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 14px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+/* ------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  header {
+    height: 75px;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 14px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  div main {
+    padding: 0;
+    margin: 0;
+  }
+
+  main div:first-of-type {
+    display: none;
+  }
+
+  main div:nth-of-type(2) {
+    width: 600px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+  /* HTML, Javascript, PHP, Wordpress navs */
+  .div-02 section:nth-child(1) ul,
+  .div-02 section:nth-child(2) ul,
+  .div-02 section:nth-child(3) ul,
+  .div-02 section:nth-child(4) ul {
+    display: block;
+    width: 350px;
+    padding: 10px 0;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    width: 350px;
+    padding: 10px 0;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    width: 350px;
+    padding: 10px 0;
+  }
+
+  /* External Client Project, Portfolio nav links */
+  .div-02 section:nth-child(5) ul li a,
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 16px;
+  }
+
+  .div-02 section p {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
+
+  .div-02 section nav ul li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Javascript nav link class margin reset*/
+  .div-02 section:nth-child(2) ul li a {
+    margin-left: 0;
+  }
+
+  /* PHP nav link margin reset*/
+  .div-02 section:nth-child(3) ul li a {
+    margin-left: 0;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+
+  .blank-section {
+    display: none;
+  }
+
+  footer {
+    height: 30px;
+    padding: 0 0 30px 0;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  .js-first {
+    margin-left: 0;
+  }
+}
+
+
+/* iPhone 5 landscape */
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  header {
+    height: 50px;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  header h2 {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  header h3 {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  main div:nth-of-type(2) {
+    width: 500px;
+    justify-content: center;
+    padding: 0;
+  }
+
+    /* HTML, Javascript, PHP, Wordpress navs */
+    .div-02 section:nth-child(1) ul,
+    .div-02 section:nth-child(2) ul,
+    .div-02 section:nth-child(3) ul,
+    .div-02 section:nth-child(4) ul {
+      display: flex;
+      justify-content: space-around;
+      width: 450px;
+      padding: 0;
+    }
+
+    /* External CLient Project nav */
+    .div-02 section:nth-child(5) ul {
+      width: 450px;
+      padding: 0;
+    }
+
+    /* Portfolio nav */
+    .div-02 section:nth-child(7) ul {
+      width: 450px;
+      padding: 0;
+    }
+
+    .div-02 section ul li:nth-child(2),
+    .div-02 section ul li:nth-child(3),
+    .div-02 section ul li:nth-child(4) {
+     padding-top: 0;
+   }
+
+   .js-first {
+     margin-left: 0;
+   }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) {
+
+  header {
+    height: 75px;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  header h2 {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  header h3 {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  div main {
+    /* padding: 0 0 20px 0; */
+    margin: 0;
+  }
+
+  main div:first-of-type {
+    display: none;
+  }
+
+  main div:nth-of-type(2) {
+    width: 500px;
+    justify-content: center;
+  }
+
+
+  /* HTML, Javascript, PHP, Wordpress navs */
+  .div-02 section:nth-child(1) ul,
+  .div-02 section:nth-child(2) ul,
+  .div-02 section:nth-child(3) ul,
+  .div-02 section:nth-child(4) ul {
+    display: block;
+    width: 290px;
+    padding: 5px 0;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    width: 290px;
+    padding: 20px 0;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    width: 290px;
+    padding: 20px 0;
+  }
+
+  /* External Client Project, Portfolio nav links */
+  .div-02 section:nth-child(5) ul li a,
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 16px;
+  }
+
+  .div-02 section p {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
+
+  .div-02 section nav ul li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Javascript nav link class margin reser*/
+  .div-02 section:nth-child(2) ul li a {
+    margin-left: 0;
+  }
+
+  /* PHP nav link margin reset*/
+  .div-02 section:nth-child(3) ul li a {
+    margin-left: 0;
+  }
+
+  .blank-section {
+    display: none;
+  }
+
+   footer {
+    height: 20px;
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  .js-first {
+    margin-left: 0;
+  }
+}
+
+/*---*/
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  header {
+    padding: 0;
+  }
+
+  header h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+/*-----------------------------------------*/
+/* iPhone X 375 x 812 */
+/*-----------------------------------------*/
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+
+  header {
+    height: 120px;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+  header h1 {
+    font-size: 16px;
+    padding: 0 0 5px;
+  }
+
+  header h2 {
+    font-size: 14px;
+    padding: 0 0 5px;
+  }
+
+  header h3 {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  main div:nth-of-type(2) {
+    padding: 0;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+/*-----------------------------------------*/
+/* iPhone X 375 x 812 */
+/*-----------------------------------------*/
+@media only screen and (max-width: 360px) {
+
+  header {
+    text-align: center;
+}
+
+  header h1 {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  header h2 {
+    font-size: 12px;
+    padding: 0 0 5px;
+  }
+
+  header h3 {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  main div:nth-of-type(2) {
+    padding: 0;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    height: 60px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    height: 60px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+/*-----------------------------------------*/
+/* iPhone X 375 x 812 */
+/*-----------------------------------------*/
+@media only screen and (max-width: 640px) and  (orientation: landscape) {
+
+  .div-02 section:nth-child(1) ul {
+    height: 24px;
+  }
+
+  .div-02 section:nth-child(2) ul {
+    height: 24px;
+  }
+
+  .div-02 section:nth-child(3) ul {
+    height: 24px;
+  }
+
+  .div-02 section:nth-child(4) ul {
+    height: 24px;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    height: 24px;
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    height: 24px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+}
+
+
+/* iPhone 5 portrait */
+@media only screen and (max-width: 320px) {
+
+  /* HTML, Javascript, PHP, Wordpress navs */
+  .div-02 section:nth-child(1) ul,
+  .div-02 section:nth-child(2) ul,
+  .div-02 section:nth-child(3) ul,
+  .div-02 section:nth-child(4) ul {
+    height: 70px;
+    padding: 10px;
+  }
+
+  .div-02 section p {
+    font-size: 14px;
+  }
+
+  /* HTML nav */
+  .div-02 section:first-child ul,
+  .div-02 section:nth-child(2) ul {
+    display: flex;
+    padding-top: 15px;
+  }
+
+  /* External CLient Project nav */
+  .div-02 section:nth-child(5) ul {
+    height: 50px;
+    padding: 0;
+
+  }
+
+  /* Portfolio nav */
+  .div-02 section:nth-child(7) ul {
+    height: 50px;
+    padding: 0;
+  }
+
+  .div-02 section nav ul li a{
+      padding: 5px 0 0 0;
+  }
+
+
+  .div-02 section:nth-child(5) ul li a,
+  .div-02 section:nth-child(7) ul li a {
+    font-size: 14px;
+  }
+
+  .div-02 section ul li:nth-child(2),
+  .div-02 section ul li:nth-child(3),
+  .div-02 section ul li:nth-child(4) {
+   padding-top: 0;
+ }
+
+ .js-first {
+   margin-left: 0;
+ }
+
+
+}
